@@ -148,7 +148,7 @@ print(device)
 print("Torch version:", torch.__version__)
 empty_cuda_cache()
 
-data_path = "LifeGPT\\"
+data_path = "LifeGPT/"
 train_file = data_path + "conway_states_0_1_10000by32by32by10_toroidal_20240711_133408"+".csv"
 val_file = data_path + "conway_states_0_1_1000by32by32by10_toroidal_20240711_151806"+".csv"
 test_file = data_path + "conway_test_states_32by32_20240716_151502.csv"
@@ -716,7 +716,7 @@ The folder [model_parameters](https://github.com/lamm-mit/LifeGPT/tree/main/mode
 epoch=50
 num_words=256
 max_length = 2071 #len("@PredictNextState<1024-bits> [1024-bits]$")
-model_path = f"model_parameters\\07_22_2024_Conway_2_State_Jump_Rot_Pos_On_Masking_On_Broad_Entropy_Homog_2024-07-23 10-37-31\\LifeGPT_epoch_{epoch}.pt"
+model_path = f"model_parameters/07_22_2024_Conway_2_State_Jump_Rot_Pos_On_Masking_On_Broad_Entropy_Homog_2024-07-23 10-37-31/LifeGPT_epoch_{epoch}.pt"
     model = load_model(model_path, max_length, num_words)
 ```
 4. **Properly Tokenize and Reshape the Input Sequence:**

@@ -244,7 +244,7 @@ class ConwayGame:
         plt.show()
 
 
-save_path = "C:\\Users\\jaime\\ML_Playground_1\\Game_Testing\\"
+save_path = "C:/Users/jaime/ML_Playground_1/Game_Testing/"
 
 game = ConwayGame()
 game.__init__(width=32,height=32)

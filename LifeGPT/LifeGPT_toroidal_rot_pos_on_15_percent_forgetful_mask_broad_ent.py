@@ -30,7 +30,7 @@ print(device)
 print("Torch version:", torch.__version__)
 empty_cuda_cache()
 
-data_path = "LifeGPT\\"
+data_path = "LifeGPT/"
 train_file = data_path + "conway_states_0_1_10000by32by32by10_toroidal_20240711_133408"+".csv"
 val_file = data_path + "conway_states_0_1_1000by32by32by10_toroidal_20240711_151806"+".csv"
 test_file = data_path + "conway_test_states_32by32_20240716_151502.csv"
